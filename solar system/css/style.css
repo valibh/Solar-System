@@ -1,0 +1,56 @@
+body {
+  background-repeat:  no-repeat;
+  background: url(https://cdn.theatlantic.com/assets/media/img/mt/2015/10/Cygnus_v3_BandW/lead_960.jpg?1444687096);
+ background-size:  cover;
+}
+.Sun{
+  text-align: center;
+  position: absolute;
+  top:180px;
+  left:calc(50% - 256px/2);
+  border-radius: 50%;
+}
+.Sun img{
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  margin: -100px;
+  bottom:700px;
+  margin-top: -20;
+  animation: test 70s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+}
+@keyframes test{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
+}
+.Earth img{
+  width: 70px;
+  height: 70px;
+  animation: test 70s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+}
+.Earth{
+  border-radius:50%;
+  height:2px;
+  width:2px;
+  position:absolute;
+  margin-top:-1px;
+  margin-left:-1px;
+  animation: test 30s infinite linear;
+  left: calc(50% - 128px / 2);
+  right: : 10px;
+  height: 820px;
+}
+@keyframes test{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
